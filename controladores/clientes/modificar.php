@@ -2,12 +2,12 @@
 require '../../modelos/Cliente.php';
 
 
-if($_POST['Cliente_nombre'] != '' && $_POST['Cliente_precio']  != '' && $_POST['Cliente_id'] != ''){
+if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit']  != '' && $_POST['cliente_id'] != ''){
 
 
 
     try {
-        $Cliente = new Cliente($_POST);
+        $cliente = new Cliente($_POST);
         $resultado = $Cliente->modificar();
 
     } catch (PDOException $e) {
@@ -54,7 +54,7 @@ if($_POST['Cliente_nombre'] != '' && $_POST['Cliente_precio']  != '' && $_POST['
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/crud_clientes/controladores/Cliente/buscar.php?cliente_nombre=<?= $_POST['cliente_nombre'] ?>" class="btn btn-info">Volver al formulario</a>
+                <a href="/crud_clientes/controladores/clientes/buscar.php?cliente_nombre=<?= $_POST['cliente_nombre'] ?>" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>
