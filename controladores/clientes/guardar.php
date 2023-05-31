@@ -7,8 +7,8 @@ if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit'] != ''){
 
 
     try {
-        $Cliente = new Cliente($_POST);
-        $resultado = $Cliente->guardar();
+        $cliente = new Cliente($_POST);
+        $resultado = $cliente->guardar();
         $error = "NO se guardó correctamente";
     } catch (PDOException $e) {
         $error = $e->getMessage();
@@ -54,7 +54,7 @@ if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit'] != ''){
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/crud_clientes/vistas/Cliente/index.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/crud_clientes/vistas/clientes/index.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>
