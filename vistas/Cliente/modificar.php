@@ -3,7 +3,7 @@ require '../../modelos/Cliente.php';
     try {
         $Cliente = new Cliente($_GET);
 
-        $Clientes = $Cliente->buscar();
+        $Cliente = $Cliente->buscar();
         // echo "<pre>";
         // var_dump($Clientes[0]['CLIENTE_ID']);
         // echo "</pre>";
@@ -29,8 +29,8 @@ require '../../modelos/Cliente.php';
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="cliente_id">cliente Nit</label>
-                        <input type="number" step="0.01" min="0" name="cliente_nit" id="cliente_nit" class="form-control" value="<?= $cliente[0]['CLIENTE_ID'] ?>">
+                        <label for="cliente_id">Nit del Cliente</label>
+                        <input type="number" step="0.01" min="0" name="cliente_nit" id="cliente_nit" class="form-control" value="<?= $cliente[0]['CLIENTE_NIT'] ?>">
                     </div>
                 </div>
                 <div class="row mb-3">
