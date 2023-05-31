@@ -40,8 +40,8 @@ try {
                         </tr>
                     </thead>
                     <tbody>
-                        <?php if(count($Cliente) > 0):?>
-                        <?php foreach($Cliente as $key => $Cliente) : ?>
+                        <?php if(count($Clientes) > 0):?>
+                        <?php foreach($Clientes as $key => $Cliente) : ?>
                         <tr>
                             <td><?= $key + 1 ?></td>
                             <td><?= $Cliente['CLIENTE_NOMBRE'] ?></td>
@@ -61,7 +61,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/crud_clientes/vistas/Cliente/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
+                <a href="/crud_clientes/vistas/clientes/buscar.php" class="btn btn-info w-100">Volver al formulario</a>
             </div>
         </div>
     </div>
