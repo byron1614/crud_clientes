@@ -8,13 +8,13 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="cliente_nombre">Nombre del Cliente</label>
-                        <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control">
+                        <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control" required>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
                         <label for="cliente_nit">Nit del Cliente</label>
-                        <input type="number" step="0.01" min="0" name="cliente_nit" id="cliente_nit" class="form-control">
+                        <input type="number" step="0.01" min="0" name="cliente_nit" id="cliente_nit" class="form-control" >
                     </div>
                 </div>
                 <div class="row mb-3">
