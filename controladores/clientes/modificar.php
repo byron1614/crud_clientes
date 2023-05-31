@@ -8,7 +8,7 @@ if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit']  != '' && $_POST['cli
 
     try {
         $cliente = new Cliente($_POST);
-        $resultado = $Cliente->modificar();
+        $resultado = $cliente->modificar();
 
     } catch (PDOException $e) {
         $error = $e->getMessage();

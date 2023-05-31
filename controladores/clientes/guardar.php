@@ -54,7 +54,7 @@ if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit'] != ''){
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/crud_clientes/vistas/clientes/index.php" class="btn btn-info">Volver al formulario</a>
+                <a href="/crud_clientes/vistas/cliente/index.php" class="btn btn-info">Volver al formulario</a>
             </div>
         </div>
     </div>
