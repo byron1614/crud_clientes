@@ -4,17 +4,17 @@
     <div class="container">
         <h1 class="text-center">Formulario de Cliente</h1>
         <div class="row justify-content-center">
-            <form action="/crudphp18may2023/controladores/productos/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
+            <form action="/crud_clientes/controladores/clientes/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="producto_nombre">Nombre del Cliente</label>
-                        <input type="text" name="producto_nombre" id="producto_nombre" class="form-control">
+                        <label for="cliente_nombre">Nombre del Cliente</label>
+                        <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="producto_precio">Cliente Nit</label>
-                        <input type="number" step="0.01" min="0" name="producto_precio" id="producto_precio" class="form-control">
+                        <label for="cliente_nit">Cliente Nit</label>
+                        <input type="number" step="0.01" min="0" name="cliente_nit" id="cliente_nit" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
